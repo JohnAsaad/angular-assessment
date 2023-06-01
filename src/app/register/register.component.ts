@@ -39,7 +39,7 @@ errorMsg = "";
     name: new FormControl(),
     email: new FormControl(),
     password: new FormControl(),
-    repassword: new FormControl(),
+    repassword: new FormControl(),  
     phone: new FormControl ()
   })
 
