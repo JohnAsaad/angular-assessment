@@ -1,0 +1,50 @@
+<div class="header-container">
+  <div class="inner-container">
+    <div class="logo" (click)="goToHome()">FreshCart</div>
+    <div class="page-btn">
+      <button mat-button (click)="goToHome()">Home</button>
+      <button mat-button>Cart</button>
+      <button mat-button>Products</button>
+      <button mat-button>Categories</button>
+      <button mat-button>Brands</button>
+    </div>
+  </div>
+  <div class="iconbtn-container">
+    <div class="icons">
+      <!-- <mat-icon
+        svgIcon="instagram"
+        aria-hidden="false"
+        aria-label="instagram icon"
+      ></mat-icon>
+      <mat-icon
+        svgIcon="facebook"
+        aria-hidden="false"
+        aria-label="facebook icon"
+      ></mat-icon>
+      <mat-icon
+        svgIcon="twitter"
+        aria-hidden="false"
+        aria-label="twitter icon"
+      ></mat-icon>
+      <mat-icon
+        svgIcon="linkedin"
+        aria-hidden="false"
+        aria-label="linkedin icon"
+      ></mat-icon>
+      <mat-icon
+        svgIcon="youtube"
+        aria-hidden="false"
+        aria-label="youtube icon"
+      ></mat-icon> -->
+      <div class="buttonnav">
+        <button *ngIf = "!isAuth" mat-stroked-button (click)="goToLogin()">Login</button>
+        <button  *ngIf = "!isAuth" mat-stroked-button (click)="goToRegister()">Register</button>
+        <button  *ngIf = "isAuth" mat-stroked-button (click)="Logout()">Logout</button>
+
+      </div>
+
+      <!-- <a href="">Login</a>
+      <a href="">Register</a> -->
+    </div>
+  </div>
+</div>

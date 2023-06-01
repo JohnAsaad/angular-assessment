@@ -1,0 +1,23 @@
+<div class="main-container">
+  <div class="details-container">
+    <img [src]="products.image" alt="" />
+    <div class="data-container">
+      <div class="inner-container">
+        <h2 class="title">{{ products.title }}</h2>
+        <h4 class="desc">{{ products.description }}</h4>
+        <h5 class="category">{{ products.category | uppercase}}</h5>
+      </div>
+
+      <div class="rating">
+        <div class="price">{{ products.price | currency }}</div>
+        <div class="rating-shape">
+            <span><igc-rating value={{products.rating.rate}} step=".1" min="1" max="5" disabled class="rating-igc"></igc-rating>
+            </span>
+          
+          <span>Ratings:{{ products.rating.count }}</span>
+        </div>
+      </div>
+      <button class="addtocart">Add To Cart</button>
+    </div>
+  </div>
+</div>

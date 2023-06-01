@@ -1,0 +1,98 @@
+.header-container {
+  /* position: sticky;
+  z-index: 999; */
+  top: 0;
+  width: 100%;
+  min-height: 80px;
+  background-color: rgb(140, 0, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+mat-icon {
+  /* position: relative; */
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+  top: 8px;
+}
+
+.iconbtn-container {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* .icons a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 15px;
+  color: white;
+} */
+
+.icons button {
+  font-size: 16px;
+  letter-spacing: 1px;
+  width: auto;
+  height: 40px;
+  color: white;
+  margin-left: 10px;
+}
+.icons {
+  margin-right: 30px;
+  display: flex;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.page-btn {
+  margin-left: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.page-btn button {
+  padding: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+
+.page-btn button {
+  transition: all 0.12s ease-in-out;
+}
+
+.page-btn button:hover {
+  /* background-color: rgb(127, 5, 226); */ 
+  color: rgb(43, 43, 43); 
+}
+
+
+.buttonnav button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(140, 0, 255);
+}
+
+.buttonnav button {
+  transition: all 0.12s ease-in-out;
+}

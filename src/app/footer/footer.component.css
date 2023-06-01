@@ -1,0 +1,134 @@
+.footer-container {
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 100%;
+  /* position: absolute; */
+  background-color: rgb(140, 0, 255);
+  /* padding-left: 40px; */
+  padding-top: 20px;
+  /* bottom: 0; */
+  box-shadow: 0px 1px 20px 1px #dbdbdb;
+}
+
+h3 {
+  padding-bottom: 1px;
+  margin-left: 40px;
+  font-style: normal;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+h4 {
+  margin-left: 40px;
+  font-size: 20px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+.inputbtn-container {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputbtn-container input {
+  width: 80%;
+  border-radius: 10px;
+  border-color: rgb(148, 64, 216);
+  height: 45px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.inputbtn input[type="text"]:focus {
+  border: 3px solid rgb(140, 0, 255);
+}
+
+.inputbtn-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+  background-color: white;
+  color: rgb(140, 0, 255);
+  font-size: 18px;
+  font-weight: bold;
+  height: 45px;
+  width: 15%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.inputbtn-container button:hover {
+  border-color: white;
+  background-color: rgb(140, 0, 255);
+  color: white;
+}
+
+.inputbtn-container button {
+  transition: all 0.2s ease-in-out;
+}
+
+hr {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.bottom-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.payment-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.payment-text {
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  margin-right: 20px;
+}
+
+.payment-container img {
+  width: 100px;
+  margin: 10px;
+}
+
+.appinfo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-text {
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  margin-right: 25px;
+}
+
+.download-imgs img {
+  width: 130px;
+  margin: 10px;
+}

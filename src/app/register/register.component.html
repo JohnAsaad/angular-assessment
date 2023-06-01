@@ -1,0 +1,40 @@
+<div class="register-container">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <p>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" formControlName="name" [(ngModel)]="signupObj1.userName" />
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" formControlName="email" [(ngModel)]="signupObj1.email" />
+    </p>
+    <p>
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        formControlName="password"
+        [(ngModel)]="signupObj1.password"
+      />
+    </p>
+    <p>
+      <label for="repassword">ReEnter Password</label>
+      <input
+        type="password"
+        id="repassword"
+        name="repassword"
+        formControlName="repassword"
+        [(ngModel)]="signupObj1.repassword"
+      />
+    </p>
+    <p>
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" formControlName="phone" [(ngModel)]="signupObj1.phone"/>
+    </p>
+    <div class="btn-container">
+        <div class="error">{{ errorMsg }}</div>
+        <button (click)="register()">Register</button>
+      </div>  
+    </form>
+</div>

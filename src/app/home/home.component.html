@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="image-slider">
+    <img src="./assets/svgicons/cart_8.jpg" alt="">
+  </div>
+  <div class="categories-slider">
+    <p class="text">Select Category</p>
+    <select class="select-container" (change)="filterCategory($event)">
+      <option value="All" selected>All</option>
+      <option value="{{option}}" *ngFor="let option of categoriesData">{{option | uppercase}}</option>
+    </select>
+  </div>
+  <div class="product-container">
+    <div class="product" *ngFor="let product of productData">
+      <div class="product-image" routerLink="/details/{{product.id}}">
+        <img [src]="product.image" alt="" />
+      </div>
+      <div class="details">
+        <div class="category">{{ product.category }}</div>
+        <div class="name">{{ product.title }}</div>
+        <div class="price-rating-container">
+          <div class="price">{{product.price | currency}}</div>
+          <div class="rating"><igc-rating value={{product.rating.rate}} step=".1" min="1" max="5" disabled class="rating-igc"></igc-rating></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
